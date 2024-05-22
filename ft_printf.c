@@ -6,7 +6,7 @@
 /*   By: logkoege <logkoege@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 21:48:35 by logkoege          #+#    #+#             */
-/*   Updated: 2024/05/19 03:02:04 by logkoege         ###   ########.fr       */
+/*   Updated: 2024/05/22 06:23:08 by logkoege         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,21 +61,3 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (len);
 }
-
-/*int	main(void)
-{
-	char papa;
-	char pepe;
-	char popo;
-
-	popo = 'a';
-	papa = 'g';
-	pepe = 'f';
-	ft_printf("%u %u %u \n", 10, -1, 100);
-	printf("%u %u %u \n", 10, -1, 100);
-
-	ft_printf("%s %s %c \n", "bonjour", "coco", pepe);
-	printf("%s %s %c \n", "bonjour", "coco", pepe);
-
-	return (0);
-}*/

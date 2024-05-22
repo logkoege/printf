@@ -52,13 +52,22 @@ int	ft_print_ptr(unsigned long long ptr)
 	int	len;
 
 	len = 0;
-	len = len + write(1, "0x", 2);
 	if (ptr == 0)
-		len = len + write(1, "0", 1);
+	{
+		write(1, "(nil)", 5);
+		return (6);
+	}
 	else
 	{
+		len = len + write(1, "0x", 2);
 		ft_put_ptr(ptr);
 		len = len + ft_ptr_len(ptr);
 	}
 	return (len);
 }
+
+/*int main()
+{
+	ft_printf("%p %p\n", 0, 0);
+	printf("%p %p\n", 0, 0);
+}*/
