@@ -55,7 +55,7 @@ int	ft_print_ptr(unsigned long long ptr)
 	if (ptr == 0)
 	{
 		write(1, "(nil)", 5);
-		return (6);
+		return (5);
 	}
 	else
 	{
